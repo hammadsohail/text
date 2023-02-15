@@ -16,7 +16,7 @@ export function MobileNavbar() {
 
   return (
     <>
-    <div className="p-10 bg-yellow-500 fixed w-full top-0 ">
+    <div className="p-10 bg-yellow-500 fixed w-full top-0  z-30">
 
       </div>
 

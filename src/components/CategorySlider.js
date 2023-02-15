@@ -17,7 +17,7 @@ export const CategorySlider = ({ categories }) => {
     <div className="relative">
       <Swiper
         spaceBetween={10}
-        slidesPerView={12}
+        slidesPerView={3}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -26,7 +26,7 @@ export const CategorySlider = ({ categories }) => {
             slidesPerView: 4,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 7,
           },
         }}
         autoplay={{
@@ -39,18 +39,17 @@ export const CategorySlider = ({ categories }) => {
         navigationclass="swiper-button-container"
 
         pagination={{ clickable: true }}
-        paginationClass="swiper-pagination-bullets"
         className="mySwiper"
       >
         {categories.map((category) => (
           <SwiperSlide  key={category.id}>
             <div className="mb-10 mt-5 flex-col flex items-center ">
               <img
-                className="mx-auto h-48 w-48 object-contain rounded-full"
+                className=" rounded-full"
                 src={category.image}
                 alt={category.name}
               />
-              <h3 className="text-3xl mt-4 font-extrabold">
+              <h3 className="text-lg sm:text-3xl mt-4 font-extrabold">
                 {category.name}
               </h3>
 

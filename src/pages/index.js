@@ -183,7 +183,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className=" mx-auto min-h-screen flex flex-col bg-slate-300">
-        <main className="flex-grow">
+        <main className="sm:flex-grow">
           {/* image slider */}
 
 
@@ -230,21 +230,21 @@ export default function Home() {
 
           {/* categories */}
 
-          <div className="bg-white">
+          <div className="bg-white px-5">
             <CategorySlider categories={categories} />
           </div>
 
           {/* promotions */}
 
-          <div className="grid grid-cols-3 gap-10 w-full my-5 mx-5">
+          <div className=" sm:grid grid-cols-3 gap-10 w-full my-5 ">
             <Promotions />
           </div>
 
           {/* Recomended for you */}
 
-          <h1 className="text-5xl font-bold mx-10 mt-10 text-gray-700">Recomended for you</h1>
+          <h1 className="text-3xl  sm:text-5xl font-bold mx-10 mt-10 text-gray-700">Recomended for you</h1>
 
-          <div className="bg-[#F1F4FD] w-full mx-5">
+          <div className="bg-[#F1F4FD] w-full mt-10">
             <RecomendedSlider categories={recomended} />
           </div>
 

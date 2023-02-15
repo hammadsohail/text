@@ -7,6 +7,6 @@ export function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  return isMobile ? <MobileNavbar /> : <DesktopNavbar />;
+  return isMobile ? <DesktopNavbar />: <DesktopNavbar />;
 }
 

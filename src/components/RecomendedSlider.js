@@ -17,13 +17,13 @@ export const RecomendedSlider = ({ categories }) => {
     <div className="relative">
       <Swiper
         spaceBetween={20}
-        slidesPerView={6}
+        slidesPerView={1}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           768: {
-            slidesPerView: 6,
+            slidesPerView: 2,
           },
           1024: {
             slidesPerView: 6,
@@ -39,10 +39,10 @@ export const RecomendedSlider = ({ categories }) => {
       >
         {categories.map((category) => (
           <SwiperSlide  key={category.id}>
-            <div className="bg-white mb-10 mt-5 p-10 flex-col flex justify-start space-y-7 ">
+            <div className="bg-white  mt-5 p-10 flex-col flex justify-start space-y-7 ">
                 <div className="bg-transparent">
               <img
-                className="mx-auto h-full w-full object-contain rounded-lg"
+                className="mx-auto  object-contain rounded-lg"
                 src={category.image}
                 alt={category.name}
               />
