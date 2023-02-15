@@ -1,123 +1,246 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Navbar } from "./../components/Navbar";
+import { ImageSwiper } from "./../components/Carousel";
+import { CategorySlider } from "./../components/CategorySlider";
+import { Promotions } from "./../components/Promotions";
+import { RecomendedSlider } from "./../components/RecomendedSlider";
 
-const inter = Inter({ subsets: ['latin'] })
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const categories = [
+    {
+      id: 1,
+      name: "Category 1",
+      image: "https://picsum.photos/seed/1/200/200",
+    },
+    {
+      id: 2,
+      name: "Category 2",
+      image: "https://picsum.photos/seed/2/200/200",
+    },
+    {
+      id: 3,
+      name: "Category 3",
+      image: "https://picsum.photos/seed/3/200/200",
+    },
+    {
+      id: 4,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 5,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 6,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 7,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 8,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 9,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 10,
+      name: "Category 4",
+      image: "https://picsum.photos/seed/4/200/200",
+    },
+    {
+      id: 11,
+      name: "Category 1",
+      image: "https://picsum.photos/seed/1/200/200",
+    },
+    {
+      id: 12,
+      name: "Category 1",
+      image: "https://picsum.photos/seed/1/200/200",
+    },
+    {
+      id: 13,
+      name: "Category 1",
+      image: "https://picsum.photos/seed/1/200/200",
+    },
+    {
+      id: 14,
+      name: "Category 1",
+      image: "https://picsum.photos/seed/1/200/200",
+    },
+
+  ];
+
+  const recomended = [
+    {
+      id: 1,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      price: 300,
+      discount: 59,
+      original: 106,
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1658476216/N31922484A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+
+    {
+      id: 2,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 4",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1613666782/N11200839A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+    {
+      id: 3,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1653984207/N53329181A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+    {
+      id: 4,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1667903026/N43455815A_5.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+    {
+      id: 5,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1667497489/N47626990A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+    {
+      id: 6,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1669724765/N40633047A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+    {
+      id: 7,
+      price: 300,
+      discount: 59,
+      original: 106,
+      name: "AXE Pack of 6 Dark Temptation Deodrant Body 1",
+      image: "https://f.nooncdn.com/products/tr:n-t_240/v1669724765/N40633047A_1.avif",
+      express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
+      ratings: 4.3,
+      reviews: 56,
+    },
+
+  ];
+
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>My Website</title>
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+      <Navbar />
+      <div className=" mx-auto min-h-screen flex flex-col bg-slate-100">
+        <main className="flex-grow">
+          {/* image slider */}
+
+          <div className=" flex flex-row  w-full">
+            <div className=" sm:grow w-80">
+              <ImageSwiper
+                images={[
+                  {
+                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/383c2895-9091-41c2-94ef-424c25c18507.png",
+                    alt: "Image 1",
+                  },
+                  {
+                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/b0024d83-e8af-4eec-ad7c-b703bfdbe87a.png",
+                    alt: "Image 2",
+                  },
+                  {
+                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/e0bf5428-90c7-4ca9-a3c4-54b97e099bc6.png",
+                    alt: "Image 3",
+                  },
+                ]}
               />
-            </a>
+            </div>
+
+            <div className="flex flex-row">
+              <Image
+                src="https://f.nooncdn.com/mpcms/EN0001/assets/c6f2bd47-5eca-4908-b3a5-d377e231622a.png"
+                width={400}
+                height={400}
+              />
+              <Image
+                src="https://f.nooncdn.com/mpcms/EN0001/assets/4b795127-3b55-499d-831b-a361e0eae5b0.png"
+                width={400}
+                height={400}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          {/* categories */}
+
+          <div className="bg-white">
+            <CategorySlider categories={categories} />
           </div>
-        </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+          {/* promotions */}
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+          <div className="grid grid-cols-3 gap-10 w-full my-5 mx-5">
+            <Promotions />
+          </div>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+          {/* Recomended for you */}
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+          <h1 className="text-5xl font-bold mx-10 mt-10 text-gray-700">Recomended for you</h1>
+
+          <div className="bg-[#F1F4FD] w-full mx-5">
+            <RecomendedSlider categories={recomended} />
+          </div>
+
+
+
+
+        </main>
+        <footer className="text-center p-4">
+          &copy; {currentYear} My Website
+        </footer>
+      </div>
     </>
-  )
+  );
 }
