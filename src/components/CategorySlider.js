@@ -16,7 +16,7 @@ export const CategorySlider = ({ categories }) => {
   return (
     <div className="relative">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerView={12}
         breakpoints={{
           640: {

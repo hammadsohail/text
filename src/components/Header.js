@@ -64,22 +64,22 @@ export function DesktopNavbar() {
 
       {/* top Nav 02 (list) */}
 
-      <div className="flex space-x-8 items-center justify-between px-4 h-16 bg-white flex-row">
+      <div className="flex space-x-8 items-center justify-between px-4 h-16 bg-white flex-row w-full">
 
        <div>
-        <h1 className="text-xl text-blue-600 font-bold">ALL CATEGORIES</h1>
+        <h1 className="text-md text-blue-600 font-bold">ALL CATEGORIES</h1>
        </div>
 
        <div className="flex flex-row space-x-5">
-       <h1 className="text-xl color-blue-400 font-bold">ELECTRONICS</h1>
-       <h1 className="text-xl color-blue-400 font-bold">MEN</h1>
-       <h1 className="text-xl color-blue-400 font-bold">WOMEN</h1>
-       <h1 className="text-xl color-blue-400 font-bold">HOME</h1>
-       <h1 className="text-xl color-blue-400 font-bold">BEAUTY & FRAGRANCE</h1>
-       <h1 className="text-xl color-blue-400 font-bold">ALL CATEGORIES</h1>
-       <h1 className="text-xl color-blue-400 font-bold">ALL CATEGORIES</h1>
-       <h1 className="text-xl color-blue-400 font-bold">ALL CATEGORIES</h1>
-       <h1 className="text-xl color-blue-400 font-bold">ALL CATEGORIES</h1>
+       <h1 className="text-md color-blue-400 font-bold">ELECTRONICS</h1>
+       <h1 className="text-md color-blue-400 font-bold">MEN</h1>
+       <h1 className="text-md color-blue-400 font-bold">WOMEN</h1>
+       <h1 className="text-md color-blue-400 font-bold">HOME</h1>
+       <h1 className="text-md color-blue-400 font-bold">BEAUTY & FRAGRANCE</h1>
+       <h1 className="text-md color-blue-400 font-bold">ALL CATEGORIES</h1>
+       <h1 className="text-md color-blue-400 font-bold">ALL CATEGORIES</h1>
+       <h1 className="text-md color-blue-400 font-bold">ALL CATEGORIES</h1>
+       <h1 className="text-md color-blue-400 font-bold">ALL CATEGORIES</h1>
 
        </div>
 
