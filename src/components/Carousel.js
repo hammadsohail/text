@@ -13,7 +13,7 @@ export const ImageSwiper = ({ images }) => {
       navigation={true}
 
       slidesPerView={1}
-      spaceBetween={10}
+      spaceBetween={2}
       loop={true}
       autoplay={{
         delay: 3000,

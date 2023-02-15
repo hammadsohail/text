@@ -207,7 +207,7 @@ export default function Home() {
 
 
               {isMobile ? false : (
-              <div className="flex flex-row w-full">
+              <div className="flex flex-row w-full mr-10">
               <Image
                 src="https://f.nooncdn.com/mpcms/EN0001/assets/c6f2bd47-5eca-4908-b3a5-d377e231622a.png"
                 width={400}
