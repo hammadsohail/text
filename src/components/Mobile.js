@@ -80,7 +80,7 @@ export function MobileNavbar() {
       </div>
 
     <div className="py-2 shadow-2xl bg-white fixed bottom-0 w-full z-30">
-      <div className="flex flex-row justify-center space-x-2 mx-auto p-3 ">
+      <div className="flex flex-row justify-center space-x-4 mx-auto p-3 ">
         {menuName.map(item => (
           <div key={item.id}className="flex flex-col items-center ">
             <img className="h-6 w-6 object-contain" src={item.image} />

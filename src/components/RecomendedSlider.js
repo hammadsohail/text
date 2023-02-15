@@ -39,18 +39,18 @@ export const RecomendedSlider = ({ categories }) => {
       >
         {categories.map((category) => (
           <SwiperSlide  key={category.id}>
-            <div className="bg-white  mt-5 p-10 flex-col flex justify-start space-y-7 ">
+            <div className="bg-white  mt-5 p-5 flex-col flex items-center space-y-7 ">
                 <div className="bg-transparent">
               <img
-                className="mx-auto align-start  object-contain rounded-lg"
+                className="h-60 w-60 align-start  object-contain rounded-lg"
                 src={category.image}
                 alt={category.name}
               />
               </div>
-              <p className="text-3xl mt-4 font-semibold line-clamp-1">
+              <p className="text-xl mt-4 font-semibold line-clamp-1">
                 {category.name}
               </p>
-              <h3 className="text-3xl mt-4 font-semibold justify-start">
+              <h3 className="text-xl mt-4 font-semibold justify-start">
                 AED {category.price}.00
               </h3>
               <div className="flex flex-row space-x-3">
@@ -61,12 +61,12 @@ export const RecomendedSlider = ({ categories }) => {
 
               <div className="flex flex-row justify-between">
                 <img src={category.express}
-                alt={category.name} className="h-10" />
+                alt={category.name} className="h-6" />
                 <div className="flex flex-row space-x-3 justify-center">
                     <div className="bg-green-900 px-5 rounded-xl">
-                <h1 className="text-white text-2xl font-bold ">{category.ratings}</h1>
+                <h1 className="text-white text-xl font-bold ">{category.ratings}</h1>
                 </div>
-                <p className="text-2xl ">({category.reviews})</p>
+                <p className="text-xl ">({category.reviews})</p>
                 </div>
               </div>
 
