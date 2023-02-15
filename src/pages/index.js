@@ -187,7 +187,7 @@ export default function Home() {
           {/* image slider */}
 
 
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full mr-5">
               <ImageSwiper
                 images={[
                   {
