@@ -17,16 +17,16 @@ export const CategorySlider = ({ categories }) => {
     <div className="relative">
       <Swiper
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={5}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 5,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 11,
           },
           1024: {
-            slidesPerView: 7,
+            slidesPerView: 11,
           },
         }}
         autoplay={{
@@ -34,6 +34,7 @@ export const CategorySlider = ({ categories }) => {
           disableOnInteraction: false,
         }}
         loop={true}
+        navigation={true}
 
         navigationclass="swiper-button-container"
 
@@ -42,15 +43,12 @@ export const CategorySlider = ({ categories }) => {
       >
         {categories.map((category) => (
           <SwiperSlide  key={category.id}>
-            <div className="mb-10 mt-5 flex-col flex items-center ">
+            <div className="mt-5 mb-20">
               <img
-                className=" rounded-full"
+                className="object-contain"
                 src={category.image}
                 alt={category.name}
               />
-              <h3 className="text-lg sm:text-3xl mt-4 font-extrabold">
-                {category.name}
-              </h3>
 
             </div>
           </SwiperSlide>

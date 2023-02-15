@@ -29,12 +29,12 @@ export function DesktopNavbar() {
   return (
     <>
     {/* Top Nav 01 */}
-      <div className="flex flex-row items-center top-0 bottom-auto pt-10 py-8 px-6 bg-[#FEEE00] space-x-8">
-        <img className="h-9 -mt-4" src="https://z.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" />
+      <div className="flex flex-row justify-between top-0 bottom-auto px-4 py-4	 bg-[#FEEE00] z-60 space-x-4">
+        <img className="h-9 " src="https://z.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" />
 
         <button className="flex flex-row space-x-4">
           <img src="https://z.nooncdn.com/s/app/com/common/images/flags/ae.svg" alt="country-ae" className="h-8" />
-          <div className="flex-col -mt-4 space-y-2">
+          <div className="-mt-4 flex-col space-y-2">
             <span className="flex flex-row text-2xl color-gray-400">
               Deliver to
               <div className="ml-6">
@@ -48,10 +48,10 @@ export function DesktopNavbar() {
         </button>
 
         <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer ">
-          <input className="-mt-3 p-5 flex-grow flex-shrink bg-white rounded-lg text-2xl" placeholder="What are you looking for ?" />
+          <input className=" p-3 flex-grow flex-shrink bg-white rounded-lg text-2xl" placeholder="What are you looking for ?" />
         </div>
 
-        <div className="flex flex-row space-x-5 items-center -mt-5">
+        <div className="flex flex-row space-x-1 items-center">
           <div className="text-2xl border-r border-gray-400 pr-4">العربية</div>
           <button className="flex flex-row text-2xl font-bold border-r border-gray-400 pr-4">
             Sign In <img className="ml-4 h-8" src="https://z.nooncdn.com/s/app/com/noon/icons/user_thin.svg" />

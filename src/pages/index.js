@@ -22,73 +22,59 @@ export default function Home() {
   const categories = [
     {
       id: 1,
-      name: "Category 1",
-      image: "https://picsum.photos/seed/1/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/5d2e037c-d677-4f1a-a7e3-86690a46ff59.png",
     },
     {
       id: 2,
-      name: "Category 2",
-      image: "https://picsum.photos/seed/2/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/057d7480-a830-40fd-b253-450de2e07abb.png",
     },
     {
       id: 3,
-      name: "Category 3",
-      image: "https://picsum.photos/seed/3/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/a079af80-5348-4e33-a87c-7825432c17ac.png",
     },
     {
       id: 4,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/a079af80-5348-4e33-a87c-7825432c17ac.png",
     },
     {
       id: 5,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/b680acd9-5df4-40e4-b14c-fa7fe0fe84c3.png",
     },
     {
       id: 6,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/c9289a52-80e4-46ce-9a39-47c408ea902a.png",
     },
     {
       id: 7,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/d398aa22-c9ee-4f7f-9b71-8c74163f79f8.png",
     },
     {
       id: 8,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/beffdc53-26ca-45b1-b3d5-84c1a0909903.png",
     },
     {
       id: 9,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/beffdc53-26ca-45b1-b3d5-84c1a0909903.png",
     },
     {
       id: 10,
-      name: "Category 4",
-      image: "https://picsum.photos/seed/4/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/daaee684-f30a-4896-9f8b-02405aec5dca.png",
     },
     {
       id: 11,
-      name: "Category 1",
-      image: "https://picsum.photos/seed/1/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/fa424b75-dd11-4939-80c3-5090e0d691e7.png",
     },
     {
       id: 12,
-      name: "Category 1",
-      image: "https://picsum.photos/seed/1/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/ed889b28-66e2-4ee0-aa41-be4c885ca396.png",
     },
     {
       id: 13,
-      name: "Category 1",
-      image: "https://picsum.photos/seed/1/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/1e51e3ef-2992-47b8-b256-8f9ffd77f968.png",
     },
     {
       id: 14,
-      name: "Category 1",
-      image: "https://picsum.photos/seed/1/200/200",
+      image: "https://f.nooncdn.com/mpcms/EN0001/assets/1e51e3ef-2992-47b8-b256-8f9ffd77f968.png",
     },
 
   ];
@@ -187,7 +173,7 @@ export default function Home() {
           {/* image slider */}
 
 
-            <div className="flex flex-row w-full mr-5">
+            <div className="flex flex-row">
               <ImageSwiper
                 images={[
                   {
@@ -230,7 +216,7 @@ export default function Home() {
 
           {/* categories */}
 
-          <div className="bg-white px-5">
+          <div className="bg-white px-5 pb-10">
             <CategorySlider categories={categories} />
           </div>
 
