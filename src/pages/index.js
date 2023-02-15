@@ -7,11 +7,18 @@ import { ImageSwiper } from "./../components/Carousel";
 import { CategorySlider } from "./../components/CategorySlider";
 import { Promotions } from "./../components/Promotions";
 import { RecomendedSlider } from "./../components/RecomendedSlider";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+
   const categories = [
     {
       id: 1,
@@ -175,12 +182,12 @@ export default function Home() {
         <title>My Website</title>
       </Head>
       <Navbar />
-      <div className=" mx-auto min-h-screen flex flex-col bg-slate-100">
+      <div className=" mx-auto min-h-screen flex flex-col bg-slate-300">
         <main className="flex-grow">
           {/* image slider */}
 
-          <div className=" flex flex-row  w-full">
-            <div className=" sm:grow w-80">
+
+            <div className="flex flex-row w-full">
               <ImageSwiper
                 images={[
                   {
@@ -197,21 +204,29 @@ export default function Home() {
                   },
                 ]}
               />
-            </div>
 
-            <div className="flex flex-row">
+
+              {isMobile ? false : (
+              <div className="flex flex-row w-full">
               <Image
                 src="https://f.nooncdn.com/mpcms/EN0001/assets/c6f2bd47-5eca-4908-b3a5-d377e231622a.png"
                 width={400}
                 height={400}
+
               />
               <Image
                 src="https://f.nooncdn.com/mpcms/EN0001/assets/4b795127-3b55-499d-831b-a361e0eae5b0.png"
                 width={400}
                 height={400}
+
               />
+            </div>)}
+
+
+
             </div>
-          </div>
+
+
 
           {/* categories */}
 

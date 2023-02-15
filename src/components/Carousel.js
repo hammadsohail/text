@@ -23,7 +23,7 @@ export const ImageSwiper = ({ images }) => {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img className="h-90 w-full object-fit"  src={image.src} alt={image.alt} />
+          <img className="h-full sm:h-full w-full object-fit"  src={image.src} alt={image.alt} />
         </SwiperSlide>
       ))}
     </Swiper>
