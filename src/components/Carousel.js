@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
 
+
 export const ImageSwiper = ({ images }) => {
   const swiperRef = useRef(null);
 
@@ -10,7 +11,6 @@ export const ImageSwiper = ({ images }) => {
     <Swiper
 
       ref={swiperRef}
-      navigation={true}
 
       slidesPerView={1}
       spaceBetween={2}
@@ -23,7 +23,7 @@ export const ImageSwiper = ({ images }) => {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img className="h-full sm:h-full w-full object-fit"  src={image.src} alt={image.alt} />
+          <img className=" h-40 w-full object-fit sm:h-full w-full object-fit"  src={image.src} alt={image.alt} />
         </SwiperSlide>
       ))}
     </Swiper>

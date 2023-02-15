@@ -42,21 +42,21 @@ export const RecomendedSlider = ({ categories }) => {
             <div className="bg-white  mt-5 p-10 flex-col flex justify-start space-y-7 ">
                 <div className="bg-transparent">
               <img
-                className="mx-auto  object-contain rounded-lg"
+                className="mx-auto align-start  object-contain rounded-lg"
                 src={category.image}
                 alt={category.name}
               />
               </div>
-              <h3 className="text-3xl mt-4 font-semibold">
+              <p className="text-3xl mt-4 font-semibold line-clamp-1">
                 {category.name}
-              </h3>
+              </p>
               <h3 className="text-3xl mt-4 font-semibold justify-start">
                 AED {category.price}.00
               </h3>
               <div className="flex flex-row space-x-3">
               <p className="text-xl text-gray-400 line-through
 ">{category.original}</p>
-              <p  className=" text-green-400 font-extrabold text-2xl">{category.discount}% OFF</p>
+              <p  className=" text-green-400 font-extrabold text-2xl ">{category.discount}% OFF</p>
               </div>
 
               <div className="flex flex-row justify-between">

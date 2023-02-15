@@ -34,7 +34,6 @@ export const CategorySlider = ({ categories }) => {
           disableOnInteraction: false,
         }}
         loop={true}
-        navigation={true}
 
         navigationclass="swiper-button-container"
 
