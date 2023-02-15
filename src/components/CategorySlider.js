@@ -16,7 +16,7 @@ export const CategorySlider = ({ categories }) => {
   return (
     <div className="relative">
       <Swiper
-        spaceBetween={1}
+        spaceBetween={20}
         slidesPerView={12}
         breakpoints={{
           640: {
@@ -26,7 +26,7 @@ export const CategorySlider = ({ categories }) => {
             slidesPerView: 4,
           },
           1024: {
-            slidesPerView: 12,
+            slidesPerView: 5,
           },
         }}
         autoplay={{
