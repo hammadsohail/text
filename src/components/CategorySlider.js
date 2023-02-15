@@ -36,7 +36,7 @@ export const CategorySlider = ({ categories }) => {
         loop={true}
         navigation={true}
 
-        navigationClass="swiper-button-container"
+        navigationclass="swiper-button-container"
 
         pagination={{ clickable: true }}
         paginationClass="swiper-pagination-bullets"
