@@ -79,10 +79,10 @@ export function MobileNavbar() {
         <img src="https://f.nooncdn.com/mpcms/EN0001/assets/4aa154d6-56c6-4188-9f36-6520211564de.png" />
       </div>
 
-    <div className="py-2 shadow-2xl bg-white fixed bottom-0">
-      <div className="flex flex-row justify-content space-x-1 mx-auto">
+    <div className="py-2 shadow-2xl bg-white fixed bottom-0 w-full z-30">
+      <div className="flex flex-row justify-center space-x-2 mx-auto p-3 ">
         {menuName.map(item => (
-          <div key={item.id}className="flex flex-col items-center">
+          <div key={item.id}className="flex flex-col items-center ">
             <img className="h-6 w-6 object-contain" src={item.image} />
             <p className="text-sm">{item.name}</p>
 
