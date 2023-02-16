@@ -213,6 +213,9 @@ export default function Home() {
           <div className="bg-[#F1F4FD] mx-5 mt-10">
             <RecomendedSlider categories={recomended} />
           </div>
+          <div className="mt-10">
+
+          </div>
 
 
 
