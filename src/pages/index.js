@@ -210,7 +210,7 @@ export default function Home() {
 
           <h1 className="text-3xl  sm:text-5xl font-bold mx-10 mt-10 text-gray-700">Recomended for you</h1>
 
-          <div className="bg-[#F1F4FD] w-full mt-10">
+          <div className="bg-[#F1F4FD] mx-5 mt-10">
             <RecomendedSlider categories={recomended} />
           </div>
 

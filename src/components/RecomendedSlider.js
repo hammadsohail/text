@@ -25,7 +25,10 @@ export const RecomendedSlider = ({ categories }) => {
           768: {
             slidesPerView: 2,
           },
-          1024: {
+          1120: {
+            slidesPerView: 4,
+          },
+          2000: {
             slidesPerView: 6,
           },
         }}
@@ -39,14 +42,14 @@ export const RecomendedSlider = ({ categories }) => {
       >
         {categories.map((category) => (
           <SwiperSlide  key={category.id}>
-            <div className="bg-white  mt-5 p-5 flex-col flex items-center space-y-7 ">
-                <div className="bg-transparent">
-              <img
-                className="h-60 w-60 align-start  object-contain rounded-lg"
-                src={category.image}
-                alt={category.name}
-              />
-              </div>
+            <div className="bg-white  mt-5 p-5 flex-col flex space-y-7 ">
+            <div className="bg-red-500">
+  <img
+    className="w-full h-full align-start object-contain rounded-lg"
+    src={category.image}
+    alt={category.name}
+  />
+</div>
               <p className="text-xl mt-4 font-semibold line-clamp-1">
                 {category.name}
               </p>
