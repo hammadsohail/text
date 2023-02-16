@@ -202,7 +202,7 @@ export default function Home() {
 
           {/* promotions */}
 
-          <div className=" sm:grid grid-cols-3 gap-10 my-5 mx-5">
+          <div className=" sm:grid grid-cols-3 gap-5 my-5 mx-5">
             <Promotions />
           </div>
 
