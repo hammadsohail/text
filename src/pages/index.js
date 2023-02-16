@@ -161,6 +161,21 @@ export default function Home() {
 
   ];
 
+  const images = [
+    {
+      src: "https://f.nooncdn.com/mpcms/EN0001/assets/383c2895-9091-41c2-94ef-424c25c18507.png",
+      alt: "Image 1",
+    },
+    {
+      src: "https://f.nooncdn.com/mpcms/EN0001/assets/b0024d83-e8af-4eec-ad7c-b703bfdbe87a.png",
+      alt: "Image 2",
+    },
+    {
+      src: "https://f.nooncdn.com/mpcms/EN0001/assets/e0bf5428-90c7-4ca9-a3c4-54b97e099bc6.png",
+      alt: "Image 3",
+    },
+  ];
+
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -168,61 +183,26 @@ export default function Home() {
         <title>My Website</title>
       </Head>
       <Navbar />
-      <div className=" mx-auto min-h-screen flex flex-col bg-slate-300">
+      <div className=" mx-auto min-h-screen flex flex-col bg-slate-100">
         <main className="sm:flex-grow">
           {/* image slider */}
 
 
-            <div className="flex flex-row">
-              <ImageSwiper
-                images={[
-                  {
-                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/383c2895-9091-41c2-94ef-424c25c18507.png",
-                    alt: "Image 1",
-                  },
-                  {
-                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/b0024d83-e8af-4eec-ad7c-b703bfdbe87a.png",
-                    alt: "Image 2",
-                  },
-                  {
-                    src: "https://f.nooncdn.com/mpcms/EN0001/assets/e0bf5428-90c7-4ca9-a3c4-54b97e099bc6.png",
-                    alt: "Image 3",
-                  },
-                ]}
-              />
-
-
-              {isMobile ? false : (
-              <div className="flex flex-row w-full justify-start">
-              <Image
-                src="https://f.nooncdn.com/mpcms/EN0001/assets/c6f2bd47-5eca-4908-b3a5-d377e231622a.png"
-                width={400}
-                height={400}
-
-              />
-              <Image
-                src="https://f.nooncdn.com/mpcms/EN0001/assets/4b795127-3b55-499d-831b-a361e0eae5b0.png"
-                width={400}
-                height={400}
-
-              />
-            </div>)}
-
-
-
+            <div className="align-baseline box-border	">
+              <ImageSwiper images={images} />
             </div>
 
 
 
           {/* categories */}
 
-          <div className="bg-white px-5 pb-10">
+          <div className="bg-white px-5">
             <CategorySlider categories={categories} />
           </div>
 
           {/* promotions */}
 
-          <div className=" sm:grid grid-cols-3 gap-10 w-full my-5 ">
+          <div className=" sm:grid grid-cols-3 gap-10 my-5 mx-5">
             <Promotions />
           </div>
 

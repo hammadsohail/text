@@ -29,7 +29,7 @@ export function DesktopNavbar() {
   return (
     <>
     {/* Top Nav 01 */}
-      <div className="flex flex-row justify-between top-0 bottom-auto px-4 py-4	 bg-[#FEEE00] z-60 space-x-4">
+      <div className="flex flex-row justify-between top-0 bottom-auto px-4 py-6	 bg-[#FEEE00] z-60 space-x-4">
         <img className="h-9 " src="https://z.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" />
 
         <button className="flex flex-row space-x-4">
