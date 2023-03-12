@@ -86,7 +86,7 @@ export default function Home() {
       price: 300,
       discount: 59,
       original: 106,
-      image: "https://f.nooncdn.com/products/tr:n-t_240/v1658476216/N31922484A_1.avif",
+      image: "https://f.nooncdn.com/p/v1658476216/N31922484A_1.jpg?format=avif&width=800",
       express: 'https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg',
       ratings: 4.3,
       reviews: 56,
